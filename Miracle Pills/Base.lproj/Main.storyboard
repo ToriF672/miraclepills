@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is James' version of Miracle Pills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzR-RI-rEp">
-                                <rect key="frame" x="68" y="114" width="239" height="17"/>
+                                <rect key="frame" x="68.5" y="114" width="239" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="239" id="3zN-sT-30o"/>
                                     <constraint firstAttribute="height" constant="17" id="fZh-PR-QeB"/>
@@ -48,21 +49,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THo-Pd-kdv" userLabel="Grey Line">
+                                <rect key="frame" x="36" y="168" width="303" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IfS-1Y-pfw"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jf-si-F5E">
+                                <rect key="frame" x="36" y="174" width="92.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="THo-Pd-kdv" firstAttribute="centerX" secondItem="Glc-Cx-Kcr" secondAttribute="centerX" id="2Tt-nL-7Lr"/>
                             <constraint firstItem="8TA-t5-jwp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="HZV-Lo-dic"/>
+                            <constraint firstItem="6Jf-si-F5E" firstAttribute="top" secondItem="THo-Pd-kdv" secondAttribute="bottom" constant="5" id="Lbd-8u-T3G"/>
+                            <constraint firstItem="6Jf-si-F5E" firstAttribute="leading" secondItem="THo-Pd-kdv" secondAttribute="leading" id="QtW-z6-jTY"/>
+                            <constraint firstItem="THo-Pd-kdv" firstAttribute="top" secondItem="Glc-Cx-Kcr" secondAttribute="bottom" constant="10" id="RN5-1J-3sY"/>
                             <constraint firstItem="jzR-RI-rEp" firstAttribute="centerX" secondItem="8TA-t5-jwp" secondAttribute="centerX" id="VJd-TI-Eqg"/>
                             <constraint firstItem="8TA-t5-jwp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFE-G4-dXW"/>
                             <constraint firstItem="Glc-Cx-Kcr" firstAttribute="centerX" secondItem="jzR-RI-rEp" secondAttribute="centerX" id="b4p-q7-kz3"/>
                             <constraint firstItem="Glc-Cx-Kcr" firstAttribute="top" secondItem="jzR-RI-rEp" secondAttribute="bottom" constant="10" id="gng-pX-eZn"/>
                             <constraint firstItem="jzR-RI-rEp" firstAttribute="top" secondItem="8TA-t5-jwp" secondAttribute="bottom" constant="20" id="mpg-NX-Vaf"/>
+                            <constraint firstItem="THo-Pd-kdv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="rZb-qu-oYe"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+            <point key="canvasLocation" x="139.84375" y="137.109375"/>
         </scene>
     </scenes>
     <resources>
